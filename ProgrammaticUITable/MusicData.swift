@@ -24,12 +24,4 @@ class MusicData {
         Info(image: "4", title: "Back"),
         Info(image: "5", title: "Chop Suey"),
     ]
-    
-    func getBands() -> [Info] {
-        return MusicData.bandsList
-    }
-    
-    func getSongs() -> [Info] {
-        return MusicData.songsList
-    }
 }
