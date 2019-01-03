@@ -10,26 +10,19 @@ import Foundation
 
 class MusicData {
     
-    let bandsList = [
+    static let bandsList = [
         Info(image: "metallica", title: "Metallica"),
         Info(image: "slipknot", title: "Slipknot"),
         Info(image: "nirvana", title: "Nirvana"),
         Info(image: "acdc", title: "AC/DC"),
         Info(image: "system", title: "System of a Dawn")
     ]
-    let songsList = [
+    
+    static let songsList = [
         Info(image: "1", title: "The unforgiven"),
         Info(image: "2", title: "Snuffs"),
         Info(image: "3", title: "Smells like teen spirit"),
         Info(image: "4", title: "Back"),
         Info(image: "5", title: "Chop Suey"),
     ]
-    
-    func getBands() -> [Info] {
-        return bandsList
-    }
-    
-    func getSongs() -> [Info] {
-        return songsList
-    }
 }

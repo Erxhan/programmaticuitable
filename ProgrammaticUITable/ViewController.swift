@@ -10,15 +10,8 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var songs = [Info]
-    var bands = [Info]
-    
-    let musicData = MusicData() {
-        didSet {
-            songs = musicData.getSongs()
-            bands = musicData.getBands()
-        }
-    }
+    var songs: [Info] = MusicData.songsList
+    var bands: [Info] = MusicData.bandsList
     
     let tableView: UITableView = {
         let tv = UITableView()
